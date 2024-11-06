@@ -1,0 +1,66 @@
+File name: index.html 
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>College Web Page</title> 
+    <link rel="stylesheet" href="index.css"> 
+</head> 
+<body> 
+ 
+<header> 
+    <img src="logo.png" alt="College Logo"> 
+    <h1>Mother Theresaa Institute Of Engineering & Technology</h1> 
+    <h1></h1> 
+</header> 
+<br> 
+<!—This tag is used for slider -- > 
+<marquee bgcolor="blue"> 
+    The Mother Theresa Institute of Engineering and Technology (MTIET) is located at Melumoi 
+Village and Post, Palamaner, Chittoor District, Andhra Pradesh 517408. It's on the Chennai
+Bombay National Highway, 5 kilometers from Palamaner.  
+</marquee>  
+ 
+<nav> 
+    <button onclick="location.href='dept.html'">Home</button> 
+    <button onclick="location.href='contact.html'">Contact</button> 
+    <button onclick="location.href='about.html'">About</button> 
+</nav> 
+ 
+<div class="comment-section"> 
+    <h2>Leave a Comment</h2> 
+    <textarea id="comment" placeholder="Enter your comments here..."></textarea> 
+    <br> 
+    <button onclick="submitComment()">Submit</button> 
+</div> 
+ 
+ 
+<div class="popup" id="popup"> 
+    <div class="popup-content"> 
+        <h2>Comment Submitted Successfully!</h2> 
+        <button onclick="closePopup()">Close</button> 
+    </div> 
+</div> 
+ 
+<script> 
+    function submitComment() { 
+          
+        document.getElementById('popup').style.display = 'flex'; 
+          
+        document.getElementById('comment').value = ''; 
+    } 
+ 
+    function closePopup() { 
+          
+        document.getElementById('popup').style.display = 'none'; 
+    } 
+</script> 
+<h2>About:</h2> 
+<h4>Mother Theresa Institute of Engineering and Technology, was established in the year 2010 with the 
+objective of empowering the rural youth for whom engineering education was not attainable easily. The 
+Institute is promoted by a non-profitable organization, 'Holy Cross Educational Society, Palamaner.</h4> 
+</body> 
+</html> 
+ 
